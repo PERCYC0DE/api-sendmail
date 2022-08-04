@@ -1,7 +1,10 @@
 const { Router } = require("express");
 const router = Router();
-
 const nodemailer = require("nodemailer");
+
+router.get("/", (req, res) => {
+  res.send("API SendMailer");
+});
 
 // From API
 router.post("/api/email", async (req, res) => {
