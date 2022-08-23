@@ -38,7 +38,7 @@ router.post("/api/email", async (req, res) => {
 
   let info = await transporter.sendMail({
     from: '"Formulario Web" <test@ittalent.pe>', // sender address,
-    to: "mailto:raul.chiquillan@ittalent.pe",
+    to: "raul.chiquillan@ittalent.pe",
     subject: "Nuevo mensaje desde página de contacto",
     html: contentHTML,
   });
